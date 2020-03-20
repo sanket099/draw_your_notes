@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:paddingBottom="10dp"
+    >
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:layout_height="wrap_content"
+       android:id="@+id/clear"
+       android:text="clear"
+       android:layout_alignParentBottom="true"
+       android:background="@color/colorPrimary"
+       android:textColor="#FFFF"
+       android:onClick="clear_text"
+       android:layout_marginStart="10dp" />
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/clear"
+       android:layout_alignParentBottom="true"
+       android:layout_marginLeft="100dp"
+       android:background="@color/colorPrimary"
+       android:textColor="#FFFF"
+       android:id="@+id/save"
+       android:text="save"
+
+       android:onClick="save"
+       android:layout_alignStart="@+id/clear"
+       android:layout_marginStart="100dp" />
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@color/colorPrimary"
+       android:textColor="#FFFF"
+
+       android:id="@+id/edit"
+       android:text="edit"
+       android:layout_alignLeft="@id/show"
+       android:layout_marginLeft="100dp"
+       android:layout_alignParentBottom="true"
+
+       android:onClick="edit"
+       android:layout_marginRight="10dp"
+       android:layout_alignStart="@id/show"
+       android:layout_marginStart="100dp"
+       android:layout_marginEnd="10dp" />
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/show"
+       android:text="show"
+       android:layout_alignParentBottom="true"
+       android:background="@color/colorPrimary"
+       android:textColor="#FFFF"
+
+
+       android:layout_alignLeft="@+id/save"
+
+       android:layout_marginLeft="100dp"
+
+       android:onClick="show"
+       android:layout_alignStart="@+id/save"
+       android:layout_marginStart="100dp" />
+
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="#FFFF"
+       android:id="@+id/camera_preview"/>
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/colorPrimary"
+       android:padding="40dp"
+      android:id="@+id/imageview"/>
+
+
+
+</RelativeLayout>
